@@ -1,0 +1,28 @@
+/*Andrew Lane*/
+/*November 9th, 2022*/
+
+/** targeting classes- 12.2 */
+.intro {
+    font-size: 24px;
+    color: darkblue;
+    padding: 20px 60px;
+    text-align: center;
+}
+
+.highlight {
+   background-color: lightgoldenrodyellow;
+   color: black;
+   padding: 5px;
+}
+
+/** alert classes video 12.3**/
+.alert{
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.blue {
+        background: blue;  
+}
