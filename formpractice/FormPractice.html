@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<!-- Andrew Lane
+     November 14, 2022 -->
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+    <meta name="author" content="Andrew Lane" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Your Name web developer Boise Idaho" />
+    <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        div {
+            margin: 10px;
+        }
+
+        label {
+            margin-right: 15px;
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto:andrewlane1@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+        <legend>How do I contact you?</legend>
+            <!-- Company Select Box, page 97 -->
+            <div>
+                
+                   <label for="company_name">Company:</label>
+                   <br> <input type="text" style="width: 400px;"
+                     name="company_name"
+                     id="company_name" placeholder=
+                     "Enter company name" />
+            </div>
+            
+            <!-- Person to Contact Select Box, page 97 -->
+            <div>
+                <label for="contact_person">Person to Contact:</label>
+               <br> <input type="text" style="width: 250px;"
+                 name="contact_person"
+                 id="contact_person" placeholder=
+                 "Enter person's name" />
+            </div>
+            <!-- Email, textbook file rental.html -->	
+            <!--Video 9.9 Building and Testing a Valid Form-->	
+
+            <div>
+                <label for="email">Email:</label>
+                 <input type="email" style="width: 170px;"
+                  name="email"
+                  id="email" placeholder=
+                  "Enter email" />
+            </div>
+            
+            <!-- Phone, textbook file rental.html-->
+            <!--Video 9.9 Building and Testing a Valid Form-->
+            <div>
+                <label for="phone">Phone number:</label>
+                <input type="tel" style="width: 170px;"
+                 name="phone"
+                 id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder=
+                 "Enter phone number" />
+            </div>
+        </fieldset>
+
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+            <legend>What opportunities are available at your company?</legend>
+            <!-- Select Box, page 98 -->
+            <label for="position-type">Type of Position</label>
+            
+            <select name="position-type" id="position-type">
+                
+            
+                <option value="Internship">Internship</option>
+                <option value="Employment">Employment</option>
+                <option value="Partner">Partner</option>
+                <option value="Referral">Referral</option>
+            </select>
+                <p>How did you find me?</p>
+                <input type="radio" name="how-find" id="linkedin" value="LinkedIn" /> <label for="linkedin">LinkedIn</label>
+                <input type="radio" name="how-find" id="jobfair" value="JobFair" /> <label for="jobfair">Job Fair</label>
+                <input type="radio" name="how-find" id="cwicorporatepartner" value="CwiCorporatePartner" /> <label for="linkedin">CWI Corporate Partner</label>
+            <!-- Radio Buttons, page 99 -->
+
+            <div>
+                <!-- Text Area, textbook file code-9-1.html -->	
+           <form name="input-reference" method="get" action="process.php">
+           <textarea name="textarea" style=" height: 170px; width: 600px;"></textarea>
+
+            </div>
+        </fieldset>
+		<input type="submit" id="submit" value="Submit" class="btn">
+     </form>
+</body>
+</html>
