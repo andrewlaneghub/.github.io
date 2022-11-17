@@ -1,0 +1,105 @@
+
+/*Andrew Lane, Michael Jewett
+November 17, 2022 */
+
+#font-face{
+	font-family: 'amaranth';
+    src: url('../fonts/amaranth-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/amaranth-bolditalic-webfont.woff2') format('woff2'),
+		 url('../fonts/amaranth-bold-webfont.woff') format('woff'),
+         url('../fonts/amaranth-bold-webfont.woff2') format('woff2'),
+		 url('../fonts/amaranth-italic-webfont.woff') format('woff'),
+         url('../fonts/amaranth-italic-webfont.woff2') format('woff2'),
+		 url('../fonts/amaranth-regular-webfont.woff') format('woff');
+
+		 
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+	font-family: 'pacifico';
+    src:
+	url('..fonts/pacifico-regular-webfont.woff') format('woff'),
+	url('../fonts/pacifico-regular-webfont.woff2') format('woff2');
+	
+font-weight: normal;
+font-style: normal;
+}
+
+.addrightmargin {
+	margin-right: 10%;
+}
+
+img{
+	border-radius:50% ;
+	float: left;
+	margin-right:10%;
+}
+
+h1 {
+	font-family: 'pacifico', cursive;
+	font-size:4.5em;
+}
+
+h2 {
+font-family: 'amaranth', sans-serif;
+font-style:italic;
+font-size: 2em;
+
+}
+body{
+	font-family: 'amaranth', sans-serif;
+}
+
+	 
+#outerwrapper {	
+	width: 70%;
+	background: rgba(243,205,170, 0.4);
+	border-radius: 15%;
+}
+
+html{
+	background-image: url("../images/jewelry.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+
+}
+
+main {
+	background-image: linear-gradient(#FFFFFF, #f0f9e6);
+	padding: 10px;
+	margin: 20px;
+	border-radius: 2em; 
+	font-size: 1.25em;
+
+
+}
+
+
+
+.border
+{
+border: 10px;
+border-radius: 70%;
+
+}
+
+nav{
+font-size: 1.5em;
+list-style-type: none;
+
+}
+.nobul{
+    list-style-type: none;
+    
+   
+} 
+footer{
+font-size: 1em;
+padding-bottom: 10px;
+text-align: center;
+}
+
