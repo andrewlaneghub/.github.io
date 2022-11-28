@@ -1,0 +1,40 @@
+section {
+display: flex;
+justify-content: flex-end;
+flex-direction: row-reverse;
+
+}
+
+div{
+
+   /* margin-top:20px; */
+   /* margin-right:auto; */
+    text-align: Center;
+    background-color:#ffffff;
+    border:2px solid darkblue;
+    width: 550px;
+    height:325px;
+    }
+
+
+
+    /* div previous{
+    width:600px;
+    margin-top:20px; 
+    margin-right:auto; 
+    text-align: Center;
+    background-color:#ffffff;
+    border:2px solid darkblue;
+    width: 550px;
+    height:325px;
+    }           
+*/
+
+ #container{
+        width:550px;
+        margin-top:20px; 
+        margin-right:auto;
+        text-align: Center;
+        background-color:#2184b9;
+        
+    } 
