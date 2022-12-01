@@ -1,0 +1,26 @@
+/*Andrew Lane
+December 1st, 2022 */
+section {
+display: flex;
+justify-content:space-around;
+flex-direction: row-reverse;
+
+}
+
+div{
+    text-align: Center;
+    background-color:#ffffff;
+    border:2px solid darkblue;
+    width: 550px;
+    height:325px;
+    }
+
+
+ .container{
+        width:550px;
+        margin-top:20px; 
+        margin-right:auto;
+        text-align: Center;
+        background-color:#2184b9;
+        
+    } 

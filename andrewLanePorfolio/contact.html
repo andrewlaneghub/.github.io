@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--Andrew Lane-->  
+<!--December 1st, 2022--> 
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <meta name ="author" content="Andrew Lane" >
+    <meta charset="UTF-8" >
+  <meta name="description" content="Contact form for reaching out to me" >
+  <meta name="keywords" content="contact, contact form, andrew lane contact, andrew lane cwi contact" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+    <body>
+      <h1>Andrew Lane</h1>
+        <nav>
+        <ul>
+          <li><a href="index.html">Home
+           </a></li>                      
+           <li><a href="about.html">About
+           </a></li>
+           <li><a href="experience.html">Experience
+          </a></li>
+           <li><a href="contact.html">
+           Contact</a></li>
+        </ul>
+        </nav>
+        <form action="mailto:andrewlane1@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+
+          <fieldset>
+          <legend>Enter your information here...</legend>
+              <div>  
+                  <label for="company_name">Company:</label>
+                     <br> <input type="text" style="width: 400px;"
+                       name="company_name"
+                       id="company_name" placeholder=
+                       "Enter company name" >
+              </div>
+              
+              <div>
+                <br>  <label for="contact_person">Name:</label>
+                 <br> <input type="text" style="width: 250px;"
+                   name="contact_person"
+                   id="contact_person" placeholder=
+                   "Enter person's name" >
+              </div>
+
+              <div>
+                <br> <label for="email">Email:</label>
+                  <br> <input type="email" style="width: 170px;"
+                    name="email"
+                    id="email" placeholder=
+                    "Enter email" >
+              </div>
+            
+              <div>
+                  <br><label for="phone">Phone number:</label>
+                <br> <input type="tel" style="width: 170px;"
+                   name="phone"
+                   id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder=
+                   "Enter phone number" >
+              </div>
+          </fieldset>
+          <fieldset>
+              <legend>What opportunities are available at your company?</legend>
+              
+              <label for="position-type">Type of Position</label>
+              
+              <select name="position-type" id="position-type">
+                  <option value="Internship">Internship</option>
+                  <option value="Employment">Employment</option>
+                  <option value="Partner">Partner</option>
+                  <option value="Referral">Referral</option>
+              </select>
+
+              <div>
+             <textarea name="textarea" style=" height: 170px; width: 600px;">Write your message here...</textarea>
+              </div>
+            <input type="submit" id="submit" value="Submit" class="btn">
+          </fieldset>
+      </form> 
+       
+  <hr>
+        <footer><a href="https://github.com/andrewlaneghub" target="_blank"><img src="image/whitegithub48.png" alt="white github logo"> </a>
+          <a href="https://www.linkedin.com/in/andrew-lane-b5906b259/" target="_blank"><img src="image/whitelinkedin48.png" alt="white linkedin logo"></a></footer>
+    </body>
+    </html>

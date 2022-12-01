@@ -1,0 +1,22 @@
+/*Andrew Lane
+December 1st, 2022 */
+table td, th{
+    border-width: 3px;
+    border-style: solid;
+    text-align: center;
+}
+
+.tableCenter{
+
+margin: 0px auto;
+}
+
+th{
+font-size: 120%
+
+}
+
+caption{
+    font-size: 130%;
+}
+
