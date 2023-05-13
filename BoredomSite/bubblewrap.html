@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Boredom Site</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"></script>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <h1 class="bg-danger text-center text-light p-4 m-0">The Boredom site</h1>
+
+    <nav class="navbar-center bg-dark">  <!--Navbar start-->
+     <ul class="nav nav-justified" >
+      <li class="nav-item"> <a class="nav-link link-light" href="index.html">Home</a></li>
+      <li class="nav-item"> <a class="nav-link link-light" href="email.html">Junk Email Simulator</a></li>
+      <li class="nav-item"> <a class="nav-link link-light" href="clicker.html">Background Generator</a></li>
+      <li class="nav-item"> <a class="nav-link link-light" href="chatbot.html">Low Budget Chatbot</a></li>
+      <li class="nav-item"> <a class="nav-link link-light" href="bubblewrap.html">Bubble Wrap Simulator</a></li>
+    </ul>
+     </nav>    <!--Navbar end-->
+<!--Div App Start -->
+<div class="card mx-auto mt-5" style="width: 50%;" >
+<img class="d-block w-100" src="https://th.bing.com/th/id/OIP.DjlkAXjyYIu0Kmb-QNQVDQHaE7?pid=ImgDet&rs=1" alt="Bubblewrap">
+<div class="d-flex justify-content-center align-items-center">
+<div x-data="{ buttons: [
+    { label: 'O', clicked: false },
+    { label: 'O', clicked: false },
+    { label: 'O', clicked: false },
+    { label: 'O', clicked: false },
+    { label: 'O', clicked: false },
+    { label: 'O', clicked: false },
+    { label: 'O', clicked: false },
+    { label: 'O', clicked: false },
+    { label: 'O', clicked: false },
+    { label: 'O', clicked: false },
+    { label: 'O', clicked: false },
+    { label: 'O', clicked: false }
+  ] }">
+<div class="card-body">
+    <div class="btn-group" role="group">
+      <template x-for="(button, index) in buttons"> <!--Button Template start-->
+        <button type="button" class="btn btn-primary" x-text="button.clicked ? 'POP!' : button.label" @click="button.clicked = !button.clicked"></button>
+      </template> <!--Button Template End-->
+    </div>
+  </div>
+</div>
+</div></div>
+<footer class="p-4 mt-5 bg-dark"> <!--Footer start-->
+</footer> <!--Footer end-->
+</body>
+</html>

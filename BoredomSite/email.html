@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Boredom Site</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"></script>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <h1 class="bg-danger text-center text-light p-4 m-0">The Boredom site</h1>
+
+    <nav class="navbar-center bg-dark">  <!--Navbar start-->
+     <ul class="nav nav-justified" >
+      <li class="nav-item"> <a class="nav-link link-light" href="index.html">Home</a></li>
+      <li class="nav-item"> <a class="nav-link link-light" href="email.html">Junk Email Simulator</a></li>
+      <li class="nav-item"> <a class="nav-link link-light" href="clicker.html">Background Generator</a></li>
+      <li class="nav-item"> <a class="nav-link link-light" href="chatbot.html">Low Budget Chatbot</a></li>
+      <li class="nav-item"> <a class="nav-link link-light" href="bubblewrap.html">Bubble Wrap Simulator</a></li>
+    </ul>
+     </nav>    <!--Navbar end-->
+<!--Inbox start-->
+<h2 class="text-center mt-5">Clean out your Inbox!</h2>
+<div class="card mx-auto mt-5" style="width: 50%;" x-data="{ show: true }" x-show="show">
+    <img class="d-block w-100" src="data:image/jpeg;base64,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" alt="MCAdfee Logo">
+    <div class="card-body"> <!--Card body start-->
+       <h5 class="card-title text-center">Your Computer Has Been Infected!</h5>
+       <p class="card-text text-center">Get rid of the virus with our<a href="https://www.youtube.com/watch?v=o-YBDTqX_ZU"> AntiVirus Software!</a></p>
+       <button type="button" class="btn btn-danger mx-auto d-block" @click="show = false">Delete Email</button>
+    </div> <!--Card body end-->
+</div> <!-- Div App End -->
+<div class="card mx-auto mt-5" style="width: 50%;" x-data="{ show: true }" x-show="show">
+    <img class="d-block w-100" src="https://th.bing.com/th/id/R.90db00e0895794c8fa48409b238ba228?rik=Zv9FatYXx7PU8Q&riu=http%3a%2f%2foyster.ignimgs.com%2fmediawiki%2fapis.ign.com%2fsly-cooper-and-the-thievius-raccoonus%2fb%2fb5%2fMuggshot.png&ehk=pxJYp44iLDmlYJX69OdOBtEPIxUEePf92px7lgogc5g%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Mugshot from Sly Cooper">
+    <div class="card-body"> <!--Card body start-->
+       <h5 class="card-title text-center">Want to be like this guy?</h5>
+       <p class="card-text text-center">Click here to find out more: <a href="https://www.youtube.com/watch?v=o-YBDTqX_ZU"> https://www.youtube.com/watch?v=o-YBDTqX_ZU</a></p>
+       <button type="button" class="btn btn-danger mx-auto d-block" @click="show = false">Delete Email</button>
+    </div> <!--Card body end-->
+</div> <!-- Div App End -->
+    <div class="card mx-auto mt-5" style="width: 50%;" x-data="{ show: true }" x-show="show">
+        <img class="d-block w-100" src="https://th.bing.com/th/id/OIP.FrPbB3USClpvmPuNVWu33AHaFj?pid=ImgDet&rs=1" alt="Blockbuster logo">
+        <div class="card-body"> <!--Card body start-->
+           <h5 class="card-title text-center">Someone logged into your Blockbuster Account!</h5>
+           <p class="card-text text-center">Reset it here: <a href="https://www.youtube.com/watch?v=o-YBDTqX_ZU"> https://blockbuster.com</a></p>
+           <button type="button" class="btn btn-danger mx-auto d-block" @click="show = false">Delete Email</button>
+        </div> <!--Card body end-->
+    </div> <!-- Div App End -->
+        <div class="card mx-auto mt-5" style="width: 50%;" x-data="{ show: true }" x-show="show">
+            <img class="d-block w-100" src="https://i.pinimg.com/736x/2c/b3/dc/2cb3dc4216141738ea2334389f0e045b.jpg" alt="Picture of elon musk with a mustache.">
+            <div class="card-body"> <!--Card body start-->
+               <h5 class="card-title text-center">Hey it's me, Elon Musk.</h5>
+               <p class="card-text text-center">I got too much money. Take it. Take all of it. <a href="https://www.youtube.com/watch?v=o-YBDTqX_ZU"> https://paypal.com</a></p>
+               <button type="button" class="btn btn-danger mx-auto d-block" @click="show = false">Delete Email</button>
+            </div> <!--Card body end-->
+        </div> <!-- Div App End -->
+ <!--Inbox end-->       
+            
+<footer class="p-4 mt-5 bg-dark"> <!--Footer start-->
+</footer> <!--Footer end-->
+</body>
+</html>

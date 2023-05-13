@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Boredom Site</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"></script>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <h1 class="bg-danger text-center text-light p-4 m-0">The Boredom site</h1>
+
+    <nav class="navbar-center bg-dark">  <!--Navbar start-->
+     <ul class="nav nav-justified" >
+      <li class="nav-item"> <a class="nav-link link-light" href="index.html">Home</a></li>
+      <li class="nav-item"> <a class="nav-link link-light" href="email.html">Junk Email Simulator</a></li>
+      <li class="nav-item"> <a class="nav-link link-light" href="clicker.html">Background Generator</a></li>
+      <li class="nav-item"> <a class="nav-link link-light" href="chatbot.html">Low Budget Chatbot</a></li>
+      <li class="nav-item"> <a class="nav-link link-light" href="bubblewrap.html">Bubble Wrap Simulator</a></li>
+    </ul>
+     </nav>    <!--Navbar end-->
+<!--Chatbot start-->
+<h2 class="text-center mt-5">Chat with our (Predetermined message) Chatbot!</h2>
+<div class="card mx-auto mt-5" style="width: 50%;" >
+<img class="d-block w-100" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.instructables.com%2FORIG%2FFF8%2F2XVL%2FJROTE3ZD%2FFF82XVLJROTE3ZD.jpg%3Fwidth%3D2100&f=1&nofb=1&ipt=a7fd3e5cf166ebac18fc33320252fcaf43539776685faa58a62cb4c7dcb8d878&ipo=images" alt="cardboard robot">
+    <div class="card-body"> <!--Card body start-->
+        <h5 class="card-title text-center">Ask me anything!</h5>
+        <p class="card-text text-center">
+            <div class="d-flex justify-content-center">
+                <div x-data data-message="Pretty good so far.">
+                <button class="btn btn-primary w-100 mr-2" @click="alert($root.dataset.message)">How was your day?</button>
+                </div> 
+                <div x-data data-message="Survive.">
+                <button class="btn btn-primary w-100" @click="alert($root.dataset.message)">How do I pass finals?</button>
+                </div>
+                <div x-data data-message="Can't go wrong with Ham and Cheese.">
+                <button class="btn btn-primary w-100" @click="alert($root.dataset.message)">What's your favorite sandwich?</button>
+                </div>
+                <div x-data data-message="Woah, that kind of came out of nowhere. Ask me something else.">
+                <button class="btn btn-primary w-100" @click="alert($root.dataset.message)">What is the meaning of life?</button>
+                </div>
+
+            </div>
+        </p>
+    </div> <!--Card body end-->
+</div> <!-- Card End -->
+<!--Chatbot end-->
+<footer class="p-4 mt-5 bg-dark"> <!--Footer start-->
+</footer> <!--Footer end-->
+</body>
+</html>
