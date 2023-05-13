@@ -1,0 +1,14 @@
+.headerG{
+    background-image: linear-gradient(-10deg, #1e2a4b, #006699,#1e2a4b);
+}
+
+.centerFooter{
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+/*Keeps Footer at the bottom when there's not enough content*/
+  main {
+    min-height: 85vh;
+  }
+  

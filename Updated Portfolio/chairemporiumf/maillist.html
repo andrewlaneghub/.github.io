@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta name="author" content="Andrew Lane" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Welcome to the chair zone!" />
+    <meta name="keywords" content="Chairs, chair, Chair Emporium" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Chair Emporium</h1>
+    <!--Site menu-->
+    <nav>
+      <ul>
+        <li><a href="index.html"class="menucol">Home </a></li>
+        <li><a href="shop.html"class="menucol">Shop </a></li>
+        <li><a href="about.html"class="menucol">About </a></li>
+        <li><a href="contact.html"class="menucol"> Contact</a></li>
+        <li><a href="faq.html"class="menucol"> FAQ</a></li>
+        <li><a href="maillist.html"class="menucol"> Mail List</a></li>
+      </ul>
+    </nav>
+    <!--End of Site Menu-->
+    <main>
+      <!--Mail list - Based on Chapter 6 Exercise 3-->
+      <h1 class="headmail">Come join our Mail List!</h1>
+      <form id="email_form" name="email_form" action="join.html" method="get">
+        <div>
+          <label for="email_1">Email Address:</label>
+          <input type="text" id="email_1" name="email_1" />
+          <span>*</span>
+        </div>
+
+        <div>
+            <label for="email_2">Confirm Email Address:</label>
+            <input type="text" id="email_2" name="email_2" />
+            <span>*</span>
+          </div>
+
+          <div>
+              <label for="first_name">Name:</label>
+              <input type="text" id="first_name" name="first_name" />
+              <span>*</span>
+            </div>
+
+            <div>
+              <label>What do you want to be notified for? </label>
+              <input type="radio" name="notification" id="sales" value="sales" checked/>Sales & Deals
+              <input type="radio" name="notification" id="items" value="items" />In Stock Items
+              <input type="radio" name="notification" id="everything" value="everything" />Everything
+            </div>
+            <br>
+            <div>
+                <label">&nbsp;</label>
+                <input type="button" id="join_list" value="Join List" />
+                <input type="button" id="clear_form" value="Clear Form" />
+              </div>
+        </form>
+        <!--End of mail list-->
+      <hr />
+      <footer></footer>
+    </main>
+    <script src="js/maillist.js"></script>
+  </body>
+</html>

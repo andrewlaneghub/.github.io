@@ -1,0 +1,25 @@
+/*based on Chapter 5 Exercise 2*/
+.headfaq {
+  font-size: 140%;
+  margin-bottom: 0.6em;
+  padding: 0;
+}
+
+section {
+  font-family: Verdana, sans-serif;
+  font-size: 85%;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.faqcol {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  padding-bottom: 0.25em;
+  padding-left: 25px;
+}

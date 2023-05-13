@@ -1,0 +1,94 @@
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 350%;
+  padding: 3px 0 3px 25px;
+  color: whitesmoke;
+  background-image: linear-gradient(-10deg, #4b1e1e, #990000, #4b1e1e);
+  border: solid black 1px;
+
+  /*margin-bottom: 0; */
+  margin: 0;
+}
+
+.fchairs {
+  text-align: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  text-align: center;
+  display: inline;
+  font-size: 120%;
+}
+
+nav ul {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  /* Remove space on menu later
+  margin: 0;
+  padding: 0;*/
+}
+
+.headmail {
+  font-size: 140%;
+  margin-bottom: 0.6em;
+}
+
+.welcome {
+  margin-top: 1.5em;
+  margin-bottom: 2.5em;
+  text-align: center;
+  font-size: 140%;
+}
+
+a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.menucol:visited {
+  color: whitesmoke;
+}
+
+.container {
+  width: 45%;
+  height: 45%;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subhead {
+  font-size: 140%;
+  margin-bottom: 0.6em;
+  padding: 0;
+}
+
+.founderinfo {
+  width: 30%;
+  height: 30%;
+  float: right;
+  margin-right: 50px;
+  border: 2px solid black;
+}
+/* To keep the footer down */
+.lower {
+  margin-bottom: 150px;
+}
+
+/* carousel css */
+
+.bx-wrapper {
+  margin: auto;
+}
+.bx-viewport {
+  padding-bottom: 20px;
+}
+#pager {
+  text-align: center;
+  font-size: 90%;
+}

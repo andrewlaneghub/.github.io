@@ -1,0 +1,53 @@
+<!--
+Andrew Lane
+19-April-2023
+
+  April-19-23: Made the basic layout for the site
+  April-20-23: Ran into a problem where the Vue3 CDN doesn't work when running on Visual Studio Code, 
+  works fine on StackBlitz.
+  April-21-23: Added and removed core-3.2.47 because it didn't help solve the VS Vue issue.
+  Added Comment Alert with Vue. Found an issue where StackBlitz Textarea is formatted differently
+  and isn't the width of the card due to a MIME type issue. Found another issue where form won't send an alert due to a MIME
+  type issue.
+  April-22-23: Added list with Vue, Added fade in Animation, Added Post Sorter.
+  April-22-23: Removed Post Sorter because it didn't work. Adjusted Textarea width in BootStrap.
+  May-1-23: Added and removed new index page beause Stackblitz didn't load it properly.
+  May-2-23: Fixed Comment Issue. Removed "Sort by" bar because it couldn't be fixed. 
+  May-9-23: Fixed Vue CDN issue, now works on Codesandbox and Visual Studio.
+  Added Block post button, like button, index page, two other profile pages.
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bird App</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <!--Bird App Profile Header-->
+  <h1 class="bg-info text-light p-4 mb-0"> <img class= "birdapp1" src="https://i.pinimg.com/originals/ca/79/ea/ca79eac25563dfa0bfaf14c671277dd9.png">Bird App</h1> 
+<!--Div App Start -->
+<div class="container mt-5">
+<div id="app">
+<!-- Transition code from Options & Rendering Lists -->
+<transition-group appear 
+@before-enter="preLoad"
+@after-enter="loaded" 
+@leave="preLoad">
+<!--Profile List-->
+<div v-for="(post, index) in posts" :key="post.id" class="card mx-auto" style="width: 60%; ">
+  <a :href="post.id + '.html'">
+  <img class="d-block w-100" :src="post.image" :alt="post.postname">
+  <div class="card-body">
+    <div>
+     <h5 class="card-title">{{index +1}} {{post.name}}</h5> 
+     <p class="card-text">{{ post.description }}</p>
+    </div>
+  </div>
+</body>
+</html>
+<script src="https://unpkg.com/vue@3.2.31"></script><script src="js/index.js"></script>

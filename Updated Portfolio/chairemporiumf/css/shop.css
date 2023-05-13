@@ -1,0 +1,12 @@
+div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  float: left;
+}
+img {
+  height: 90%;
+  width: 90%;
+  border: solid black;
+  flex: right;
+}
