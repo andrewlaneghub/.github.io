@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tim's Profile</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+  <!--Back to home bar-->
+  <nav class="navbar-center bg-dark">
+    <ul class="nav" >
+     <li class="nav-item"> <a class="nav-link link-light" href="index.html"><b> < Back To Home</b></a></li>
+   </ul>
+    </nav>
+    <!--Tim Profile Header-->
+  <h1 class="bg-info text-light p-4 mb-0"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+  </svg> Tim</h1> 
+<div class="container mt-5">
+<div id="app"><!--Div App Start-->
+<transition-group appear 
+@before-enter="preLoad"
+@after-enter="loaded" 
+@leave="preLoad">
+<!--Post List-->
+<div v-for="(post, index) in posts" :key="post.id" class="card mx-auto" style="width: 60%;">
+  <img class="d-block w-100" :src="post.image" :alt="post.postname">
+  <div class="card-body">
+    <div>
+     <h5 class="card-title">{{index +1}} {{post.name}}</h5> <button :class="{ 'btn-primary': post.liked }" @click="likePost(post)">
+      {{ post.liked ? 'Liked' : 'Like' }}
+    </button>
+     <p class="card-text">{{ post.description }}</p>
+    </div>
+  </div>
+  <!--Post list end-->
+  <!--Comment Form-->
+  <button @click="removePost(index)">Block post from feed</button>
+  <form @submit.prevent="submitForm">
+    <label for="comment"></label>
+    <textarea class="w-100" id="comment" v-model="name" placeholder="Comment here..." required></textarea>
+    <button>Send Comment</button>
+  </form>
+</div> </transition-group>
+</div> <!--Div App End-->
+</body>
+</html> 
+<script src='https://unpkg.com/vue@next'></script><script src="js/tim.js"></script>

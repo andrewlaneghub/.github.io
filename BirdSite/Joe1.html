@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joe's Profile</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  <!--Back to home bar-->
+  <nav class="navbar-center bg-dark">
+    <ul class="nav" >
+     <li class="nav-item"> <a class="nav-link link-light" href="index.html"><b> < Back To Home</b></a></li>
+   </ul>
+    </nav>
+    <!--Joe's Profile Header-->
+  <h1 class="bg-success text-light p-4 mb-0"> <img class="pfp"src="https://i.pinimg.com/736x/fe/2e/20/fe2e20be452313015a52c01322303fc8.jpg"> Joe</h1> 
+
+
+<div class="container mt-5">
+<div id="app"><!-- Div App Start -->
+<!-- Transition code from Options & Rendering Lists -->
+<transition-group appear 
+@before-enter="preLoad"
+@after-enter="loaded" 
+@leave="preLoad">
+<!--Post List-->
+<div v-for="(post, index) in posts" :key="post.id" class="card mx-auto" style="width: 60%;">
+  <img class="d-block w-100" :src="post.image" :alt="post.postname">
+  <div class="card-body">
+    <div>
+     <h5 class="card-title">{{index +1}} {{post.name}}</h5> <button :class="{ 'btn-primary': post.liked }" @click="likePost(post)">
+        {{ post.liked ? 'Liked' : 'Like' }}
+      </button>
+     <p class="card-text">{{ post.description }}</p>
+    </div>
+  </div>
+  <!--Post list end-->
+  <!--Comment Form-->
+  <button @click="removePost(index)">Block post from feed</button>
+  <form @submit.prevent="submitForm">
+    <label for="comment"></label>
+    <textarea class="w-100" id="comment" v-model="name" placeholder="Comment here..." required></textarea>
+    <button>Send Comment</button>
+  </form>
+</div> </transition-group>
+</div> <!--Div App End-->
+</body>
+</html> 
+<script src='https://unpkg.com/vue@next'></script><script src="js/joe.js"></script>
