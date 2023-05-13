@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--Andrew Lane-->
+<!--January 26th, 2023-->
+<!--
+
+        --Change Log--
+        1/26/23:   Added boilerplate to prepare website
+        1/27/23: Made website layout, added JS. Encountered problem
+        where javascript file will not work even though its added properly.
+        1/28/23: Added CSS. Still Stuck on JS Problem.
+        1/29/23: The JS problem solved itself at random. Reloded page again and it suddenly works. Working on featured chairs.
+        1/29/23: Added Featured Chairs placeholder.
+        2/08/23: Added FAQ page & Mailing List page
+        2/09/23: Working on FAQ JS and CSS
+        2/10/23: Added Mail List Page JS
+        2/11/23: Fixed an issue where the Join list and Clear Form buttons were empty. Finished FAQ JS.
+        2/12/23: Menu color now doesn't change when visited.
+        2/22/23: Added Contact page
+        2/23/23: Added dropdown animation to FAQ, added About page
+        2/24/23: Fixed an issue where images would appear in front of the left and right buttons.
+        3/3/23:  Added accordion FAQ jquery addon. Added a part of chair carousel.
+        3/4/23:  Chair corousel border readjusted. Added calander code to contact page.
+        3/5/23: Fixed issues with featured chair carousel. Removed calander code from Contact because it caused everything to break.
+        3/9/23: Added date and time code to contact.
+        3/10/23: Removed date and time code because it caused the rest of the form to stop working, Added shop html, item pages, and item css.
+-->
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta name="author" content="Andrew Lane" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Welcome to the chair zone!" />
+    <meta name="keywords" content="Chairs, chair, Chair Emporium" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Chair Emporium</h1>
+    <!--Site menu-->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="menucol">Home </a></li>
+        <li><a href="shop.html" class="menucol">Shop </a></li>
+        <li><a href="about.html" class="menucol">About </a></li>
+        <li><a href="contact.html" class="menucol"> Contact</a></li>
+        <li><a href="faq.html" class="menucol"> FAQ</a></li>
+        <li><a href="maillist.html" class="menucol"> Mail List</a></li>
+      </ul>
+    </nav>
+    <!--End of Site Menu-->
+    <main>
+
+        <div class="welcome">
+          <script src="js/fakewebsite.js"></script>
+        </div> <!--welcome message end-->
+        <h2 class="fchairs">Featured Chairs:</h2>
+        <div class="container">
+          <div>
+            <ul id="slider">
+              <!--Image 1-->
+              <li>
+   <a href="stumpchair.html">   <img src="images/stump2.png" alt="" title="Stump Chair"> </a>
+              </li>
+              <!--Image 2-->
+              <li>
+   <a href="stockchair.html"><img src="images/widestock.png" alt="" title="Stock Image Chair"> </a>
+              </li>
+              <!--Image 3-->
+              <li>
+   <a href="minechair.html">     <img src="images/widemcchair.png" alt="" title="Minecraft Chair"> </a>
+              </li>
+            </ul><!--Slider ul end-->
+            <p id= "pager"></p>
+          </div> 
+          </div>
+        </div> 
+        <hr />
+        <footer></footer>
+      </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.bxSlider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/chaircarousel.js"></script>
+  </body>
+</html>
